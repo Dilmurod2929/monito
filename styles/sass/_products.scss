@@ -1,0 +1,12 @@
+section.products {
+  .flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.products__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}

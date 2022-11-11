@@ -1,0 +1,24 @@
+section#partners {
+  .flex {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex1 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    .out-line-btn {
+      margin-left: auto;
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 31px;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+}

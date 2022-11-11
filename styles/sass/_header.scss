@@ -1,0 +1,89 @@
+header#main-header {
+  padding: 2rem 0;
+  text-transform: capitalize;
+  color: $primary-color;
+  background-color: $secondary-color;
+  box-shadow: 0 0 10px $secondary-color;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  .container.flex {
+    justify-content: space-between;
+  }
+  .flex {
+    align-items: center;
+    gap: 1rem;
+  }
+  input[type="search"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 1rem;
+  }
+  .dropdown {
+    position: relative;
+    top: 100%;
+    right: 0;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 60px;
+    padding: 10px;
+    margin: 2px;
+    color: $primary-color;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    li {
+      &:hover {
+        color: white;
+        background-color: $primary-color;
+        text-indent: 0.5rem;
+      }
+    }
+  }
+  input[type="checkbox"]:checked + .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  .sider {
+    display: block;
+    input[type="checkbox"]:checked + .saidebar {
+      transform: translateX(0%);
+    }
+  }
+  .saidebar {
+    input[type="search"] {
+      width: 200px;
+    }
+    padding: 1rem;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary-color;
+    color: white;
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s linear;
+    li {
+      margin: 1rem 0;
+      &:hover {
+        opacity: 02;
+        color: $secondary-color;
+        text-indent: 1rem;
+      }
+    }
+    .main-btn {
+      margin: 1rem 0;
+      background-color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+section#adoption {
+  background-color: $secondary-color;
+  color: $primary-color;
+  h2 {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 68px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+  }
+  p {
+    margin: 1rem 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .flex {
+    align-items: center;
+  }
+}
